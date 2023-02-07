@@ -1,6 +1,6 @@
 type GraphType = Record<string, string[]>;
 
-const bfs = (obj: GraphType | any) => {
+const bfs = (obj: GraphType) => {
   if (typeof obj === 'object' && !Array.isArray(obj) && obj !== null) {
     const visitList: string[] = [];
     const queue: string[] = [];
